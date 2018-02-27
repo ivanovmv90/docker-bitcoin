@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  bitcoind-main:
+    container_name: bitcoind-main
+    build:
+      context: .
+    environment:
+      BITCOIN_RPC_USER: ceiwHEbqWI83
+      BITCOIN_RPC_PASSWORD: DwubwWsoo3
+    expose:
+      - "49372"
+      - "8332"
+    ports:
+      - 49372:49372
+      - 8332:8332
